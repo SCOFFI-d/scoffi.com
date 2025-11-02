@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Games - Scoffi</title>
+		<link rel="icon" href="scoffiLogo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="tooltip.css">
+		<link rel="stylesheet" href="graphic.css">
+		<style>
+		body {
+			background: linear-gradient(to right, #f22c2c, #ffef08);
+			animation: gradientAnimation 10s ease infinite;
+			background-size: 200% 200%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		@keyframes gradientAnimation {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+		}
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		h2{
+			display: inline;
+		}
+		
+		
+		</style>
+	</head>
+	<script src="essentials.js"></script>
+	<body>
+		<div class=upperBar>
+		<h1 class=webLogo>SCOFFI</h1> 
+			<a href="index.html" class=upperButton style="margin-left: 150px;"> Home </a> 
+			<a href="scoffi_games.html" class=upperButton> Games </a>
+			<a href="scoffi_art.html" class=upperButton> Art </a>
+			<a href="scoffi_music.html" class=upperButton> Music </a>
+			<a href="scoffi_about.html" class=upperButton> About </a>
+		</div>
+		<div>
+		<h2 class=pageTitle> Games </h2>
+		</div>
+		<div class=menugrid>
+			<div class=section>
+				<a href="scoffi_games_bov.html"><img data-file="bov.png" style="border-radius: 15px"></a>
+				<h2 class=sectionTitle><span class=tooltip>Blade of Vengeance (2024)<p class=tooltiptext style="font-size: 10px">2D Pixel Art fast-paced fencing game.</p></span></h2>
+			</div>
+			<div class=section>
+				<a href="scoffi_games_pers.html"><img data-file="pers.png" style="border-radius: 15px"></a>
+				<h2 class=sectionTitle><span class=tooltip>PERS: Ancient Escape (2025)<p class=tooltiptext style="font-size: 10px">A Puzzle-Escape Room game in which two archaeologists investigate
+				the secrets of an ancient temple and try to escape from there.</p></span></h2>
+			</div>
+			<div class=section>
+				<img data-file="retrocomputer.png" style="border-radius: 15px">
+				<h2 class=sectionTitle><span class=tooltip>Other Stuffs<p class=tooltiptext style="font-size: 10px">I have so many game ideas...</p></span></h2>
+			</div>
+		</div>
+		
+		<div style="position: absolute; padding-left: 45vw; bottom: 10px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
+	</body>

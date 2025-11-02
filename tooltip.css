@@ -1,0 +1,41 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  margin-bottom: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* kutuyu yukarýya taþýr */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Küçük ok iþareti */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* kutunun altýna yerleþtir */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+/* Hover olunca görünür */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

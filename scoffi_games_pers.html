@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PERS: Ancient Escape - Scoffi</title>
+		<link rel="icon" href="scoffiLogo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="tooltip.css">
+		<link rel="stylesheet" href="graphic.css">
+		<style>
+		body {
+			background: linear-gradient(to right, #e7ebb9, #b7bd75);
+			animation: gradientAnimation 10s ease infinite;
+			background-size: 200% 200%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		@keyframes gradientAnimation {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+		}
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		h2{
+			display: inline;
+		}
+		
+		.banner{
+			display: inline;
+			position: absolute;
+			object-fit: cover;
+			height: 300px;
+			object-position: 0px -120px;
+			left: 0px;
+			-webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+			mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+		}
+		
+		.showcaseVideo{
+			display: inline;
+			position: absolute;
+			right: 70px;
+			top: 352px;
+			width: 396px;
+			height: auto;
+			video.loop=true;
+			video.autoplay=false;
+			filter: grayscale(40%) brightness(0.8);
+			transition: filter 0.4s ease;
+		}
+		
+		.showcaseVideo:hover{
+			filter: grayscale(0%) brightness(1);
+		}
+		</style>
+	</head>
+	<script src="essentials.js"></script>
+	<body>
+		<div class=upperBar>
+		<h1 class=webLogo>SCOFFI</h1> 
+			<a href="index.html" class=upperButton style="margin-left: 150px;"> Home </a> 
+			<a href="scoffi_games.html" class=upperButton> Games </a>
+			<a href="scoffi_art.html" class=upperButton> Art </a>
+			<a href="scoffi_music.html" class=upperButton> Music </a>
+			<a href="scoffi_about.html" class=upperButton> About </a>
+		</div>
+		<div>
+		<h2 class=pageTitle> PERS: Ancient Escape </h2>
+		</div>
+		<div><img data-file="pers_background.png" class=banner></div>
+		<div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+		
+		<div class=messageBox style="color: white"> <h2 class=subhead>About</h2>
+		<p>PERS is a <b>Puzzle - Escape Room</b> game in which two archaeologists investigate the secrets of an ancient temple and 
+		try to escape from there. The temple includes various of puzzle rooms and a final arena with <b>Shooter</b> concept!</p> </div>
+		<div class=messageBox style="color: white">
+		<p>As the "<b>En Garde</b>" team, we made this game as our second college project in 2025. We were 5 members and I was the <b>Game Designer</b>,
+		 <b>Game Developer</b> and <b>Sound Designer</b> of the team.</p>
+		</div>
+		<video data-file="pers_gameplay.mp4" class=showcaseVideo></video>
+		<div style="padding-left: 45vw; margin-top: 40px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
+	</body>
+	

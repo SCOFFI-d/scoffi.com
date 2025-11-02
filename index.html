@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Scoffi</title>
+		<link rel="icon" href="scoffiLogo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="tooltip.css">
+		<link rel="stylesheet" href="graphic.css">
+		<style>
+		body {
+			background: linear-gradient(to right, #f22c2c, #ffef08);
+			animation: gradientAnimation 10s ease infinite;
+			background-size: 200% 200%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		@keyframes gradientAnimation {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+		}
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		h2{
+			display: inline;
+		}
+		
+		#mainPageProfile {
+			display: inline;
+			position: absolute;
+			width: 355px;
+			height: 355px;
+			border-radius: 360px;
+			left: 715px;
+			transition: transform 0.3s;
+		}
+		
+		#mainPageProfile:hover {
+			display: inline;
+			position: absolute;
+			width: 355px;
+			height: 355px;
+			
+			left: 715px;
+			transform: scale(1.05);
+		}
+		
+		</style>
+	</head>
+	<script src="essentials.js"></script>
+	<body>
+		<div class=upperBar>
+		<h1 class=webLogo>SCOFFI</h1> 
+			<a href="index.html" class=upperButton style="margin-left: 150px;"> Home </a> 
+			<a href="scoffi_games.html" class=upperButton> Games </a>
+			<a href="scoffi_art.html" class=upperButton> Art </a>
+			<a href="scoffi_music.html" class=upperButton> Music </a>
+			<a href="scoffi_about.html" class=upperButton> About </a>
+		</div>
+		<div>
+		<h2 class=pageTitle> Home </h2>
+		</div>
+		<div style="margin-top: 180px">
+		<img id=mainPageProfile data-file="homepage_profile.png">
+		</div>
+		<div class=messageBox style="margin-top: 180px">
+			<p>Hi! I'm <b>Muhammed Emin Aksoy</b>, currently a Game Design student at Muğla Sıtkı Koçman University. I'm passionate about <b>game design</b>, 
+			<b>development</b>, and also <b>music!</b><br></p>
+		</div>
+		<div class=messageBox> <p>While developing myself as a <b>Game Designer</b>, I am interested in and improving myself in each stage
+		of the game creation process.</p>
+		</div>
+		<div class=messageBox> <p>My vision for making a game is <b>creativity</b>, <b>exploration</b> and <b>fun!</b></p>
+		</div>
+		
+		
+		
+		<div style="position: absolute; padding-left: 45vw; bottom: 10px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
+	</body>

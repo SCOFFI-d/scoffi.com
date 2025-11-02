@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Music - Scoffi</title>
+		<link rel="icon" href="scoffiLogo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="tooltip.css">
+		<link rel="stylesheet" href="graphic.css">
+		<style>
+		body {
+			background: linear-gradient(to right, #f22c2c, #ffef08);
+			animation: gradientAnimation 10s ease infinite;
+			background-size: 200% 200%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		@keyframes gradientAnimation {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+		}
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		h2{
+			display: inline;
+		}
+		
+		
+		
+		</style>
+	</head>
+	<script src="essentials.js"></script>
+	<body>
+		<div class=upperBar>
+		<h1 class=webLogo>SCOFFI</h1> 
+			<a href="index.html" class=upperButton style="margin-left: 150px;"> Home </a> 
+			<a href="scoffi_games.html" class=upperButton> Games </a>
+			<a href="scoffi_art.html" class=upperButton> Art </a>
+			<a href="scoffi_music.html" class=upperButton> Music </a>
+			<a href="scoffi_about.html" class=upperButton> About </a>
+		</div>
+		<div>
+		<h2 class=pageTitle> Music </h2>
+		</div>
+		<div class=menugrid>
+			<div class=section>
+				<img data-file="arayisalbum.png" style="border-radius: 15px">
+				<h2 class=sectionTitle><span class=tooltip>Arayış (Not Released)</span></h2>
+			</div>
+			<div class=section>
+				<img data-file="darkmood.jpg" style="border-radius: 15px">
+				<h2 class=sectionTitle><span class=tooltip>Dark Mood (2020)</span></h2>
+			</div>
+			<div class=section>
+				<img data-file="kalbimidinle.jpg" style="border-radius: 15px">
+				<h2 class=sectionTitle><span class=tooltip>Kalbimi Dinle (2020)</span></h2>
+			</div>
+		</div>
+		
+		<div style="position: absolute; padding-left: 45vw; bottom: 10px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
+	</body>

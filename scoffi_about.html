@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>About - Scoffi</title>
+		<link rel="icon" href="scoffiLogo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="tooltip.css">
+		<link rel="stylesheet" href="graphic.css">
+		<style>
+		body {
+			background: linear-gradient(to right, #f22c2c, #ffef08);
+			animation: gradientAnimation 10s ease infinite;
+			background-size: 200% 200%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		@keyframes gradientAnimation {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+		}
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		h2{
+			display: inline;
+		}
+		
+		.informationText{
+			display: inline-block;
+			color: white;
+			font-size: 20px;
+			padding-left: 49px;
+			margin-top: 50px;
+		}
+		#mainPageProfile {
+			display: inline;
+			position: absolute;
+			width: 355px;
+			height: 355px;
+			border-radius: 360px;
+			left: 715px;
+			transition: transform 0.3s;
+		}
+		
+		#mainPageProfile:hover {
+			display: inline;
+			position: absolute;
+			width: 355px;
+			height: 355px;
+			
+			left: 715px;
+			transform: scale(1.05);
+		}
+		</style>
+	</head>
+	<script src="essentials.js"></script>
+	<body>
+		<div class=upperBar>
+		<h1 class=webLogo>SCOFFI</h1> 
+			<a href="index.html" class=upperButton style="margin-left: 150px;"> Home </a> 
+			<a href="scoffi_games.html" class=upperButton> Games </a>
+			<a href="scoffi_art.html" class=upperButton> Art </a>
+			<a href="scoffi_music.html" class=upperButton> Music </a>
+			<a href="scoffi_about.html" class=upperButton> About </a>
+		</div>
+		<div>
+		<h2 class=pageTitle> About </h2>
+		</div>
+		<div style="margin-top: 180px">
+		<img id=mainPageProfile data-file="homepage_profile.png">
+		</div>
+		<div class=messageBox>
+		<span><b>Full Name:</b> Muhammed Emin AKSOY</span>
+		</div>
+		<div class=messageBox>
+		<span><b>Location:</b> Muğla, Türkiye</span>
+		</div>
+		<div class=messageBox>
+		<span><b>E-mail Adress:</b> eminaksoy.design@gmail.com</span>
+		</div>
+		
+		<div style="position: absolute; padding-left: 45vw; bottom: 10px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
+	</body>
