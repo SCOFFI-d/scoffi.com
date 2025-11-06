@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
   document.addEventListener("DOMContentLoaded", () => {
-    const videos = document.querySelectorAll(".showcaseVideo");
-
+    const videos = document.querySelectorAll(".showcaseVideo, .content");
+	
     videos.forEach(video => {
       video.addEventListener("mouseenter", () => {
         video.play();

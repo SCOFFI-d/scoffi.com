@@ -57,6 +57,30 @@
 		.showcaseVideo:hover{
 			filter: grayscale(0%) brightness(1);
 		}
+		
+		.contents{
+			display: grid;
+			background-color: rgba(0,0,0,0.65);
+			grid-template-columns: 1fr 1fr 2fr;
+			padding-left: 1.2vw;
+			padding-top: 2.4vh;
+			margin-right: 5.4vw;
+			margin-left: 55px;
+			margin-top: 20px;
+		}
+		
+		.content{
+			display: inline-block;
+			object-fit: cover;
+			object-position: center;
+			background-color: #b7bd75;
+			width: 290px;
+			height: 290px;
+			margin-right: 4.3vw;
+			margin-bottom: 4.3vh;
+			video.loop=true;
+			video.autoplay=false;
+		}
 		</style>
 	</head>
 	<script src="essentials.js"></script>
@@ -83,6 +107,19 @@
 		 <b>Game Developer</b> and <b>Sound Designer</b> of the team.</p>
 		</div>
 		<video data-file="pers_gameplay.mp4" class=showcaseVideo></video>
+		<div class=contents>
+		<h2 class=subhead> Contents </h2></div>
+		<div class=contents style="margin-top: 0">
+		<img data-file="arena_layout.png" class=content></img>
+		<img data-file="arena_blockout.png" class=content></img>
+		<video data-file="arena_levelintroduction.mp4" class=content></video>
+		<video data-file="library_level.mp4" class=content></video>
+		<video data-file="maze_level.mp4" class=content></video>
+		<video data-file="colorfall_minigame.mp4" class=content></video>
+		<video data-file="bomberman_minigame.mp4" class=content></video>
+		</div>
+		
+		
 		<div style="padding-left: 45vw; margin-top: 40px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
 	</body>
 	
