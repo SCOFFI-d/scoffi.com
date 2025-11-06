@@ -169,6 +169,10 @@
 			transform: scale(1.05);
 			}
 			
+			.copyrightText {
+				display: flex; justify-content: center;
+			}
+			
 @media (max-width: 1000px) {
   .upperBar {
   display: flex;
@@ -182,10 +186,14 @@
 }
 
 .pageTitle{
-	position: center;
-	align-items: center;
-	justify-content: center;
+	display: flex;
+	justify: center;
 	text-align: center;
+}
+
+.centeredTitle{
+	display: flex;
+	justify-content: center;
 }
 
 .upperButton {

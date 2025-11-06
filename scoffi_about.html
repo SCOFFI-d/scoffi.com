@@ -37,24 +37,35 @@
 			padding-left: 49px;
 			margin-top: 50px;
 		}
+		
 		#mainPageProfile {
-			display: inline;
-			position: absolute;
+			display: inline-block;
 			width: 355px;
 			height: 355px;
 			border-radius: 360px;
-			left: 715px;
+			margin-top: 20px;
+			margin-left: 70px;
 			transition: transform 0.3s;
 		}
 		
 		#mainPageProfile:hover {
-			display: inline;
-			position: absolute;
-			width: 355px;
-			height: 355px;
-			
-			left: 715px;
 			transform: scale(1.05);
+		}
+		
+		.homegrid{
+			display: flex;
+		}
+		
+		@media (max-width: 1000px) {
+		.homegrid{
+			display: flex;
+			flex-direction: column;
+		}
+		
+		#mainPageProfile{
+			width: 300px;
+			height: 300px;
+			margin-left: 32px;
 		}
 		</style>
 	</head>
@@ -68,12 +79,15 @@
 			<a href="scoffi_music.html" class=upperButton> Music </a>
 			<a href="scoffi_about.html" class=upperButton> About </a>
 		</div>
-		<div>
+		<div class=centeredTitle>
 		<h2 class=pageTitle> About </h2>
 		</div>
+		
+		<div class=homegrid>
 		<div>
 		<img id=mainPageProfile data-file="homepage_profile.png">
 		</div>
+		<div>
 		<div class=messageBox>
 		<span><b>Full Name:</b> Muhammed Emin AKSOY</span>
 		</div>
@@ -83,6 +97,7 @@
 		<div class=messageBox>
 		<span><b>E-mail Adress:</b> eminaksoy.design@gmail.com</span>
 		</div>
+		</div></div>
 		
-		<div style="position: absolute; padding-left: 45vw; bottom: 10px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
+		<div class=copyrightText><span style="font-size: 12px; color: white">© 2025 Scoffi.</span></div>
 	</body>
