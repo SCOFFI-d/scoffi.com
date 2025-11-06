@@ -30,24 +30,29 @@
 			display: inline;
 		}
 		
+		.homegrid{
+			display: flex;
+		}
+		
 		#mainPageProfile {
-			display: inline;
-			position: absolute;
+			display: inline-block;
 			width: 355px;
 			height: 355px;
 			border-radius: 360px;
-			left: 715px;
+			margin-top: 20px;
+			margin-left: 70px;
 			transition: transform 0.3s;
 		}
 		
 		#mainPageProfile:hover {
-			display: inline;
-			position: absolute;
-			width: 355px;
-			height: 355px;
-			
-			left: 715px;
 			transform: scale(1.05);
+		}
+		
+		@media (max-width: 1000px) {
+		.homegrid{
+			display: flex;
+			flex-direction: column-reverse;
+		}
 		}
 		
 		</style>
@@ -65,10 +70,10 @@
 		<div>
 		<h2 class=pageTitle> Home </h2>
 		</div>
-		<div style="margin-top: 180px">
-		<img id=mainPageProfile data-file="homepage_profile.png">
-		</div>
-		<div class=messageBox style="margin-top: 180px">
+		
+		<div class=homegrid style="margin-top: 160px">
+		<div>
+		<div class=messageBox >
 			<p>Hi! I'm <b>Muhammed Emin Aksoy</b>, currently a Game Design student at Muğla Sıtkı Koçman University. I'm passionate about <b>game design</b>, 
 			<b>development</b>, and also <b>music!</b><br></p>
 		</div>
@@ -76,10 +81,11 @@
 		of the game creation process.</p>
 		</div>
 		<div class=messageBox> <p>My vision for making a game is <b>creativity</b>, <b>exploration</b> and <b>fun!</b></p>
+		</div></div>
+		<div>
+		<img id=mainPageProfile data-file="homepage_profile.png">
+		</div>
 		</div>
 		
-		
-		
-		<div style="position: absolute; padding-left: 45vw; bottom: 10px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
 
 	</body>
