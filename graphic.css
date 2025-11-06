@@ -186,9 +186,8 @@
 }
 
 .pageTitle{
-	display: flex;
-	justify: center;
 	text-align: center;
+	margin-left: 0px;
 }
 
 .centeredTitle{
