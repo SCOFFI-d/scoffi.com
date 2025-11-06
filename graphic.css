@@ -24,6 +24,11 @@
 			color: orange;
 		}
 		
+		.upperButton.active{
+			color: orange;
+			border-bottom: 2px solid orange;
+		}
+		
 		.webLogo{
 			display: inline;
 			position: fixed;

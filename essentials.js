@@ -67,3 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	  });
     });
   });
+
+//selected upper button color event
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".upperButton");
+  const currentPage = window.location.pathname.split("/").pop(); // Örn: "scoffi_music.html"
+
+  buttons.forEach(btn => {
+    const href = btn.getAttribute("href");
+    if (href === currentPage || (href === "scoffi.html" && currentPage === "")) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+});
+
