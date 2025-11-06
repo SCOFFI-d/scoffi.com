@@ -86,7 +86,7 @@
 		.section{
 			display: inline-block;
 			background-color: transparent;
-			border-radius: 20px;
+			border-radius: 15px;
 			opacity: 100%;
 			width: 300px;
 			height: 300px;
@@ -171,7 +171,7 @@
 			}
 			
 			.copyrightText {
-				display: flex; justify-content: center;
+				display: flex; justify-content: center; margin-top: 100px;
 			}
 			
 @media (max-width: 1000px) {
@@ -187,6 +187,10 @@
 }
 
 .pageTitle{
+	text-align: center;
+	margin-left: 0px;
+}
+.subhead{
 	text-align: center;
 	margin-left: 0px;
 }
@@ -207,7 +211,28 @@
   
   .messageBox{
 			width: 270px;
-			margin-left: 32px;
+			margin-left: 0px;
 		}
   
-  }
+  .menugrid{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-left: 0px;
+		}
+	
+	.section{
+			display: inline-block;
+			margin-left: 0px;
+			z-index: 900;
+			color: white;
+			text-align: center;
+		}
+		
+		.sectionTitle{
+			display: inline-block;
+			margin-top: 5px;
+			z-index: 500;
+		}
+}

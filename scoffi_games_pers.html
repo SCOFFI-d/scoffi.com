@@ -34,28 +34,32 @@
 			display: inline;
 			position: absolute;
 			object-fit: cover;
-			height: 300px;
-			object-position: 0px -120px;
+			height: 50vh;
+			object-position: 0px -24vh;
 			left: 0px;
 			-webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 			mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 		}
 		
 		.showcaseVideo{
-			display: inline;
-			position: absolute;
-			right: 70px;
-			top: 352px;
+			display: inline-block;
 			width: 396px;
 			height: auto;
 			video.loop=true;
 			video.autoplay=false;
 			filter: grayscale(40%) brightness(0.8);
 			transition: filter 0.4s ease;
+			margin-top: 20px;
+			margin-left: 30px;
 		}
 		
 		.showcaseVideo:hover{
 			filter: grayscale(0%) brightness(1);
+		}
+		
+		.homegrid{
+			display: flex;
+			flex-direction: row;
 		}
 		
 		.contents{
@@ -66,20 +70,20 @@
 			padding-top: 2.4vh;
 			margin-right: 5.4vw;
 			margin-left: 55px;
-			margin-top: 20px;
 		}
 		
 		.content{
 			display: inline-block;
 			object-fit: cover;
 			object-position: center;
-			background-color: #b7bd75;
-			width: 290px;
-			height: 290px;
+			background-color:#b7bd75;
+			width: 25.3vw;
+			height: 25.3vw;
 			border-radius: 15px;
 			margin-right: 4.3vw;
 			margin-bottom: 4.3vh;
-			
+			video.loop=true;
+			video.autoplay=false;
 		}
 		
 		.contents video{
@@ -92,6 +96,37 @@
 		.content:hover{
 			filter: grayscale(0%) brightness(1);
 		}
+		
+		.title{
+			display: block; position: absolute; color:white; font-size: 60px; top: 28px; left: 58px;z-index: 500;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); margin-bottom: 5px;
+		}
+		
+		@media (max-width: 1000px){
+			.homegrid {
+				flex-direction: column-reverse;
+				align-items: center;
+			}
+			.showcaseVideo {
+				margin-left: 0px;
+				width: 300px;
+			}
+			.title {
+				position: absolute;
+				text-align: center;
+				left: 0;
+			}
+			.contents{
+				margin-left: 30px;
+				margin-right: 30px;
+				grid-template-columns: 1fr 0.5fr;
+			}
+			.content{
+				width: 35.3vw;
+				height: 35.3vw;
+			}
+				
+			}
 		</style>
 	</head>
 	<script src="essentials.js"></script>
@@ -104,22 +139,23 @@
 			<a href="scoffi_music.html" class=upperButton> Music </a>
 			<a href="scoffi_about.html" class=upperButton> About </a>
 		</div>
-		<div>
-		<h2 class=pageTitle> PERS: Ancient Escape </h2>
+		<div class=centeredTitle>
+		<h2 class=title> PERS: Ancient Escape </h2>
 		</div>
 		<div><img data-file="pers_background.png" class=banner></div>
 		<div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 		
+		<div class=homegrid><div>
 		<div class=messageBox style="color: white"> <h2 class=subhead>About</h2>
 		<p>PERS is a <b>Puzzle - Escape Room</b> game in which two archaeologists investigate the secrets of an ancient temple and 
 		try to escape from there. The temple includes various of puzzle rooms and a final arena with <b>Shooter</b> concept!</p> </div>
 		<div class=messageBox style="color: white">
 		<p>As the "<b>En Garde</b>" team, we made this game as our second college project in 2025. We were 5 members and I was the <b>Game Designer</b>,
 		 <b>Game Developer</b> and <b>Sound Designer</b> of the team.</p>
-		</div>
-		<video data-file="pers_gameplay.mp4" class="showcaseVideo video-container"></video>
-		<div class=contents>
-		<h2 class=subhead> Contents </h2></div>
+		</div></div>
+		<div><video data-file="pers_gameplay.mp4" class=showcaseVideo></video></div></div>
+		<div class=contents style="display: flex; margin-top: 20px">
+		<div class=centeredTitle><h2 class=subhead> Contents </h2></div></div>
 		<div class=contents style="margin-top: 0">
 		<img data-file="arena_layout.png" class=content></img>
 		<img data-file="arena_blockout.png" class=content></img>
