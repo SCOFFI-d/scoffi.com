@@ -1,7 +1,7 @@
 // baseMediaLoader.js
 
 // Tüm medya dosyalarý için ana URL
-const baseURL = "https://raw.githubusercontent.com/SCOFFI-d/scoffi.com/refs/heads/main/";
+const baseURL = "https://raw.githubusercontent.com/SCOFFI-d/scoffi.com/refs/heads/main/Files/";
 
 // Sayfa tamamen yüklendiðinde çalýþsýn
 document.addEventListener("DOMContentLoaded", () => {
