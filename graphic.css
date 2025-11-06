@@ -34,28 +34,6 @@
 			border-bottom: 2px solid orange;
 		}
 		
-		@media (max-width: 1000px) {
-  .upperBar {
-  display: flex;
-  flex-direction: row; /* Butonlar yan yana */
-  justify-content: flex-start;
-  overflow-x: auto; /* YATAY kaydırma */
-  overflow-y: hidden; /* Dikey kaydırmayı engelle */
-  scroll-behavior: smooth;
-  white-space: nowrap; /* Butonlar alt satıra geçmesin */
-  
-}
-
-
-.upperButton {
-  flex: 0 0 auto; /* Genişlik sabit */
-  margin-right: 10px;
-}
-
-  .upperBar::-webkit-scrollbar {
-    display: none; /* Kaydırma çubuğunu gizle */
-  }}
-		
 		.webLogo{
 			display: inline;
 			position: fixed;
@@ -190,3 +168,31 @@
 			transform: scale(1.05);
 			}
 			
+@media (max-width: 1000px) {
+  .upperBar {
+  display: flex;
+  flex-direction: row; /* Butonlar yan yana */
+  justify-content: flex-start;
+  overflow-x: auto; /* YATAY kaydırma */
+  overflow-y: hidden; /* Dikey kaydırmayı engelle */
+  scroll-behavior: smooth;
+  white-space: nowrap; /* Butonlar alt satıra geçmesin */
+  
+}
+
+
+.upperButton {
+  flex: 0 0 auto; /* Genişlik sabit */
+  margin-right: 10px;
+}
+
+  .upperBar::-webkit-scrollbar {
+    display: none; /* Kaydırma çubuğunu gizle */
+  }
+  
+  .messageBox{
+			width: 265px;
+			margin-left: 45px;
+		}
+  
+  }
