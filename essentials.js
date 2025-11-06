@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   buttons.forEach(btn => {
     const href = btn.getAttribute("href");
-    if (href === currentPage || (href === "scoffi.html" && currentPage === "")) {
+    if (href === currentPage || (href === "index.html" && currentPage === "")) {
       btn.classList.add("active");
     } else {
       btn.classList.remove("active");
