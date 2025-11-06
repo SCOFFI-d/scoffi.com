@@ -57,6 +57,30 @@
 		.showcaseVideo:hover{
 			filter: grayscale(0%) brightness(1);
 		}
+		
+		.contents{
+			display: grid;
+			background-color: rgba(0,0,0,0.65);
+			grid-template-columns: 1fr 1fr 2fr;
+			padding-left: 1.2vw;
+			padding-top: 2.4vh;
+			margin-right: 5.4vw;
+			margin-left: 55px;
+		}
+		
+		.content{
+			display: inline-block;
+			object-fit: cover;
+			object-position: center;
+			background-color:#d94c41;
+			width: 290px;
+			height: 290px;
+			border-radius: 15px;
+			margin-right: 4.3vw;
+			margin-bottom: 4.3vh;
+			video.loop=true;
+			video.autoplay=false;
+		}
 		</style>
 	</head>
 	<script src="essentials.js"></script>
@@ -82,6 +106,19 @@
 		and <b>Project Manager</b> of the team.</p>
 		</div>
 		<video data-file="BoV_gameplay.mp4" class=showcaseVideo></video>
+		<div class=contents style="margin-top: 20px">
+		<h2 class=subhead> Contents </h2></div>
+		<div class=contents>
+		<img data-file="aokai_training_area.png" class=content style="width: 84.5vw"></img>
+		<img><img>
+		<img data-file="aokai_dojo.png" class=content style="width: 84.5vw"></img>
+		</div>
+		<div class=contents>
+		<img data-file="bov.png" class=content></img>
+		<img data-file="bov_menu.png" class=content style="width: 628px"></img>
+		</div>
+		
+		
 		<div style="padding-left: 45vw; margin-top: 40px;"><span style="text-align: justify; font-size: 12px; color: white">© 2025 Scoffi.</span></div>
 	</body>
 	

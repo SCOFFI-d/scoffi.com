@@ -29,6 +29,22 @@
 			border-bottom: 2px solid orange;
 		}
 		
+		@media (max-width: 768px) {
+  .upperBar {
+    justify-content: flex-start;
+    overflow-x: auto; /* Yatay kaydırma aktif */
+    scroll-behavior: smooth;
+  }
+
+  .upperBar::-webkit-scrollbar {
+    display: none; /* Kaydırma çubuğunu gizle */
+  }
+
+  .upperButton {
+    flex: 0 0 auto; /* Butonlar sabit genişlikte olsun */
+    margin-right: 10px;
+		}}
+		
 		.webLogo{
 			display: inline;
 			position: fixed;
@@ -149,3 +165,4 @@
 			.menugrid video:hover {
 			transform: scale(1.05);
 			}
+			

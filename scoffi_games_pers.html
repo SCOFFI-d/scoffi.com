@@ -76,10 +76,21 @@
 			background-color: #b7bd75;
 			width: 290px;
 			height: 290px;
+			border-radius: 15px;
 			margin-right: 4.3vw;
 			margin-bottom: 4.3vh;
+			
+		}
+		
+		.contents video{
 			video.loop=true;
 			video.autoplay=false;
+			filter: grayscale(40%) brightness(0.8);
+			transition: filter 0.4s ease;
+		}
+		
+		.content:hover{
+			filter: grayscale(0%) brightness(1);
 		}
 		</style>
 	</head>
@@ -106,7 +117,7 @@
 		<p>As the "<b>En Garde</b>" team, we made this game as our second college project in 2025. We were 5 members and I was the <b>Game Designer</b>,
 		 <b>Game Developer</b> and <b>Sound Designer</b> of the team.</p>
 		</div>
-		<video data-file="pers_gameplay.mp4" class=showcaseVideo></video>
+		<video data-file="pers_gameplay.mp4" class="showcaseVideo video-container"></video>
 		<div class=contents>
 		<h2 class=subhead> Contents </h2></div>
 		<div class=contents style="margin-top: 0">
