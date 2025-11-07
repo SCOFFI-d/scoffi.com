@@ -152,6 +152,7 @@
 			object-fit: cover;
 			border-radius: 10px;
 			transition: transform 0.3s;
+			z-index: 999;
 			}
 			
 			.menugrid video {
@@ -201,12 +202,12 @@
 }
 
 .upperButton {
-  flex: 0 0 auto; /* Genişlik sabit */
+  flex: 0 0 auto; /* Geni?lik sabit */
   margin-right: 10px;
 }
 
   .upperBar::-webkit-scrollbar {
-    display: none; /* Kaydırma çubuğunu gizle */
+    display: none; /* Kaydırma çubu?unu gizle */
   }
   
   .messageBox{
@@ -220,18 +221,23 @@
 			justify-content: center;
 			align-items: center;
 			margin-left: 0px;
+			
 		}
-	
+	.menugrid img{
+			
+	}
 	.section{
 			display: inline-block;
 			margin-left: 0px;
+			margin-right: 0px;
 			z-index: 900;
 			color: white;
 			text-align: center;
+			height: 400px;
 		}
 		
 		.sectionTitle{
-			display: inline-block;
+			display: block;
 			margin-top: 5px;
 			z-index: 500;
 		}

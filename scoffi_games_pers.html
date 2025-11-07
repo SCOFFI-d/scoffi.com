@@ -68,8 +68,8 @@
 			grid-template-columns: 1fr 1fr 2fr;
 			padding-left: 1.2vw;
 			padding-top: 2.4vh;
-			margin-right: 5.4vw;
-			margin-left: 55px;
+			margin-right: 5.5vw;
+			margin-left: 4.8vw;
 		}
 		
 		.content{
@@ -77,13 +77,14 @@
 			object-fit: cover;
 			object-position: center;
 			background-color:#b7bd75;
-			width: 25.3vw;
-			height: 25.3vw;
+			width: 27.3vw;
+			height: 27.3vw;
 			border-radius: 15px;
-			margin-right: 4.3vw;
-			margin-bottom: 4.3vh;
+			margin-right: 1.3vw;
+			margin-bottom: 1.3vh;
 			video.loop=true;
 			video.autoplay=false;
+			transition: transform 0.3s;
 		}
 		
 		.contents video{
@@ -95,6 +96,7 @@
 		
 		.content:hover{
 			filter: grayscale(0%) brightness(1);
+			transform: scale(1.05);
 		}
 		
 		.title{
@@ -106,27 +108,37 @@
 			.homegrid {
 				flex-direction: column-reverse;
 				align-items: center;
+				margin-top: -260px;
 			}
 			.showcaseVideo {
 				margin-left: 0px;
 				width: 300px;
+				margin-top: 0;
 			}
 			.title {
-				position: absolute;
+			margin-top: 50px;
+				position: static;
 				text-align: center;
-				left: 0;
+				font-size: 45px;
 			}
 			.contents{
-				margin-left: 30px;
-				margin-right: 30px;
+				display: grid;
 				grid-template-columns: 1fr 0.5fr;
+				align-items: center;
+				justify-content: center;
+				padding-right: 1.2vw;
+				gap: 1.2vw;
 			}
 			.content{
-				width: 35.3vw;
-				height: 35.3vw;
+				width: 40.3vw;
+				height: 40.3vw;
+				margin-right: 0;
 			}
-				
+			.banner{
+				position: absolute;
+				top:60px;
 			}
+		}
 		</style>
 	</head>
 	<script src="essentials.js"></script>
