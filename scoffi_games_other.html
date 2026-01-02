@@ -25,8 +25,8 @@
 		}
 		
 		img{
-			width: 100%;
 			height: auto;
+			display: inline;
 		}
 		
 		h2{
@@ -45,7 +45,6 @@
 		box-sizing: border-box;
 			display: grid;
 			background-color: rgba(0,0,0,0.65);
-			grid-template-columns: 0fr;
 			padding-top: 0.4vh;
 			padding-bottom: 0.4vh;
 			padding-right: 5.4vw;
@@ -59,7 +58,7 @@
 			object-fit: cover;
 			object-position: center;
 			background-color:#d94c41;
-			width: 28vw;;
+			width: 28vw;
 			height: 28vw;
 			border-radius: 15px;
 			margin-bottom: 1.9vw;
@@ -80,6 +79,13 @@
 			background-size: 200% 200%;
 		}
 		
+		.contentBox{
+			 display: grid;
+			 grid-template-columns: 28vw 1fr;
+			 justify-content: center;
+			 color: white;
+			 width: 100%;
+		}
 		</style>
 	</head>
 	<script src="essentials.js"></script>
@@ -98,11 +104,10 @@
 		<div class=contents style="margin-top: 20px;justify-content: center;">
 		<div class=centeredTitle ><h2 class=subhead style="align-content: center; text-align: center;"> Contents </h2></div></div>
 		<div class=contents style="margin-top: 0">
-		<video data-file="maya_clip1.mp4" class=content></video>
-		<img data-file="retrofuturism_game_title.jpg" class=content></img>
-		<img data-file="theroom_menu.jpg" class=content></img>
-		<img data-file="lover_menu.jpg" class=content></img>
-		<img data-file="japanese_room.png" class=content></img>
+		<img data-file="inarca_title.png" class=content></img>
+		<img data-file="crystaladventure.png" class=content></img>
+		<img data-file="portal2_leveldesign.png" class=content></img>
+		<img data-file="doom_leveldesign.png" class=content></img>
 		<img data-file="robush_render2.png" class=content></img>
 		<img data-file="totoro_render.png" class=content></img>
 		<img data-file="movement_poster.jpg" class=content></img>
